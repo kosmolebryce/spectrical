@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "spectrical"
+version = "0.1.0"
+description = "A simple utility for quickly ascertaining the possible functional groups represented in a given set of NMR data"
+authors = ["K. LeBryce <kosmolebryce@pm.me>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "spectrical", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.3"
+black = "^24.4.2"
+Nuitka = "^2.4.5"
+
+[tool.poetry.scripts]
+spectrical = "spectrical.Spectrical:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
