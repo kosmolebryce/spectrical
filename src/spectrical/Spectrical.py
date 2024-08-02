@@ -100,7 +100,7 @@ class NMRAnalyzerApp:
         self.root.title("NMR Analysis Helper")
         self.nmr_helper = NMRAnalysisHelper()
 
-        self.label = tk.Label(root, text="Enter NMR Shifts (comma or line delimited, e.g., '0.9, 3.8' or '0.9\n3.8'):")
+        self.label = tk.Label(root, text="Enter NMR Shifts as a comma- or line-delimited list:")
         self.label.pack(pady=10)
 
         self.input_text = tk.Text(root, height=5, width=60, wrap=tk.WORD)
